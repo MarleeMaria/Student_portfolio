@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(6,5,39);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  overflow-x: hidden;
+
+}
+
+
+/* Nav Bar */
+
+#mainNav .navbar-brand:hover {
+  color: #c902a8;
+}
+
+#mainNav a {
+  color: #f2f2f2;
+  /* padding: 0.5em 0.5em; */
+  text-decoration: none;
+  transition: color 0.2s linear;
+
+}
+
+#mainNav a:hover {
+  color: rgb(253, 2, 206);
+  transition: color 0.5s linear;
+}
+
+#top-menu li.active a {
+  color: #6b8bf4;
+}
+
+.sticky {
+  background-color: rgba(6,5,39, .5);
+  transition: background-color 0.5s linear;
+}
+
+
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://www.videvo.net/video/fiber-optics-macro-shot-12/5510/') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("images/best/pink_coffee.jpg"); */
+  /* background: url("images/purple.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  /* font-family: '"Courier New", Courier, monospace'; */
+  font-family: 'Muli';
+  font-size: 2.5rem;
+  /* align-items: left; */
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  /* -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+  line-height: 2.5rem;
+
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+.quote-section {
+  padding: 10rem 3rem;
+}
+.quote-section h1{
+  font-family: 'Muli';
+  font-size: 4rem;
+  text-align: center;
+}
+.quote-section h2{
+  font-family: 'Muli';
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
+.about-section {
+  padding: 10rem 3rem;
+  background: linear-gradient(0deg, rgb(6,5,39) 1%, rgb(243, 232, 252) 50%, rgb(6,5,39) 90%);
+}
+.about-section h4{
+  font-family: 'Muli';
+  font-size: 5rem;
+}
+
+
+.about-section .about-text {
+  padding: 3rem;
+  font-size: 125%;
+  background-color: rgb(6,5,39);
+
+}
+
+@media (min-width: 992px) {
+  .about-section .about-text {
+    padding: 5rem;
+    background-color: rgb(6,5,39);
+
+  }
+  .about-section .about-text hr {
+    border-color: rgb(210,150,255);
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+
+
+/* Skills */
+
+.skills-section {
+  padding: 13rem 3rem;
+  /* background: linear-gradient(0deg, rgb(6,5,39) 1%, rgba(6,5,39,0.2) 80%, rgba(6,5,39,0.5) 90%); */
+}
+#skill h3 {
+  font-family: 'Muli';
+  font-size: 9rem;
+}
+
+
+/* Skill Bars */
+.myProgress {  width: 100%; background-color: rgb(232, 234, 239);}
+
+.javascript { width: 90%; height: 2rem; background-color: rgb(253, 2, 206);}
+
+.python { width: 65%; height: 2rem; background-color: rgb(253, 2, 206);}
+
+.java { width: 60%;  height: 2rem;  background-color: rgb(253, 2, 206);}
+
+.css {  width: 95%;  height: 2rem;  background-color: rgb(253, 2, 206);}
+
+.sql {  width: 70%;  height: 2rem;  background-color: rgb(253, 2, 206);}
+
+.php {  width: 90%;  height: 2rem;  background-color: rgb(253, 2, 206);}
+
+.haskell {  width: 40%;  height: 2rem;  background-color: rgb(253, 2, 206);}
+
+.testing {  width: 70%;  height: 2rem;  background-color: rgb(253, 2, 206);}
+
+
+
+/* Education */
+
+.school-section {
+  padding: 13rem 3rem;
+  color: black;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(6,5,39) 0%, rgb(243, 232, 252) 30%, rgb(243, 232, 252) 100%);
+}
+
+#school h1 {
+  font-family: 'Muli';
+  font-size: 9rem;
+}
+
+footer {
+  background:rgba(243, 232, 252, 1);
+  color: black;
+  padding: 1rem 3rem;
+
+}
+/*
+.text {
+  background-color: white;
+  color: black;
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+ */
+
+/* Project */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Work */
+
+
+.work-section {
+  padding: 10rem 2rem;
+  overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Muli';
+  background-image: url("images/light_black.jpg");
+}
+
+.work-section h1{
+  font-size: 6rem;
+  text-align: center;
+  font-family: 'Muli';
+
+}
+.work-section p{
+  text-align: left;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 29rem;
+  height: 25rem;
+  perspective: 70rem; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(6,5,39, .5);
+  color: black;
+}
+.flip-card-front img{
+  width: 29rem;
+  height: 25rem;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(243, 232, 252);
+  color: black;
+  padding: 0rem 1rem;
+  transform: rotateY(180deg);
+}
