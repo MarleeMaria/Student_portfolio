@@ -134,7 +134,7 @@ header .overlay {
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .masthead {
     height: 100vh;
     padding: 0;
@@ -184,7 +184,7 @@ header .overlay {
 
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .about-section h4{
     font-family: 'Muli';
     font-size: 3rem;
@@ -215,7 +215,7 @@ header .overlay {
   font-size: 9rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   #skill h3{
     font-family: 'Muli';
     font-size: 3rem;
@@ -257,7 +257,7 @@ header .overlay {
   font-size: 9rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   #school h1 {
     font-family: 'Muli';
     font-size: 3rem;
@@ -346,7 +346,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   .work-section h1{
     font-size: 3rem;
     text-align: center;
