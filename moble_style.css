@@ -191,8 +191,13 @@ header .overlay {
 }
 
 @media (min-width: 992px) {
+  .about-section h4{
+    font-family: 'Muli';
+    font-size: 2rem;
+  }
   .about-section .about-text {
     padding: 5rem;
+    font-size: 50%;
     background-color: rgb(6,5,39);
 
   }
@@ -216,6 +221,12 @@ header .overlay {
   font-size: 9rem;
 }
 
+@media (min-width: 992px) {
+  #skill h3{
+    font-family: 'Muli';
+    font-size: 3rem;
+  }
+}
 
 /* Skill Bars */
 .myProgress {  width: 100%; background-color: rgb(232, 234, 239);}
@@ -250,6 +261,13 @@ header .overlay {
 #school h1 {
   font-family: 'Muli';
   font-size: 9rem;
+}
+
+@media (min-width: 992px) {
+  #school h1 {
+    font-family: 'Muli';
+    font-size: 3rem;
+  }
 }
 
 footer {
