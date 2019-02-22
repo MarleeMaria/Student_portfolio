@@ -51,7 +51,7 @@ body {
 
 header {
   position: relative;
-  background-color: black;
+  background-image: url("images/fiber_Moment.jpg");
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -133,14 +133,8 @@ header .overlay {
 
 }
 
-@media (min-width: 768px) {
-  .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
 
-@media (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .masthead {
     height: 100vh;
     padding: 0;
@@ -185,19 +179,19 @@ header .overlay {
 
 .about-section .about-text {
   padding: 3rem;
-  font-size: 125%;
+  font-size: 120%;
   background-color: rgb(6,5,39);
 
 }
 
-@media (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .about-section h4{
     font-family: 'Muli';
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .about-section .about-text {
-    padding: 5rem;
-    font-size: 50%;
+    padding: 1.5rem;
+    font-size: 80%;
     background-color: rgb(6,5,39);
 
   }
@@ -221,7 +215,7 @@ header .overlay {
   font-size: 9rem;
 }
 
-@media (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   #skill h3{
     font-family: 'Muli';
     font-size: 3rem;
@@ -263,7 +257,7 @@ header .overlay {
   font-size: 9rem;
 }
 
-@media (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   #school h1 {
     font-family: 'Muli';
     font-size: 3rem;
@@ -351,6 +345,16 @@ footer {
   font-family: 'Muli';
 
 }
+
+@media only screen and (max-width: 992px) {
+  .work-section h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Muli';
+
+  }
+}
+
 .work-section p{
   text-align: left;
 }
