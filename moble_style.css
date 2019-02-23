@@ -51,7 +51,7 @@ body {
 
 header {
   position: relative;
-  background-image: url("images/fiber_Moment.jpg");
+  background-image: url("images/wallpaper/fiber_Moment.jpg");
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -71,6 +71,10 @@ header video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+}
+@media (min-width: 992px) {
+
+
 }
 
 header .container {
@@ -134,7 +138,7 @@ header .overlay {
 }
 
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .masthead {
     height: 100vh;
     padding: 0;
@@ -184,14 +188,14 @@ header .overlay {
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .about-section h4{
     font-family: 'Muli';
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .about-section .about-text {
-    padding: 1.5rem;
-    font-size: 80%;
+    padding: 5rem;
+    font-size: 100%;
     background-color: rgb(6,5,39);
 
   }
@@ -215,7 +219,7 @@ header .overlay {
   font-size: 9rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   #skill h3{
     font-family: 'Muli';
     font-size: 3rem;
@@ -257,12 +261,13 @@ header .overlay {
   font-size: 9rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   #school h1 {
     font-family: 'Muli';
     font-size: 3rem;
   }
 }
+
 
 footer {
   background:rgba(243, 232, 252, 1);
@@ -270,64 +275,78 @@ footer {
   padding: 1rem 3rem;
 
 }
-/*
-.text {
-  background-color: white;
-  color: black;
-  font-size: 1vw;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 10px;
-  width: 50%;
-  text-align: center;
-  mix-blend-mode: screen;
-}
- */
 
 /* Project */
 
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+
+.portfolio {
+  margin-bottom: -15px;
+}
+#portfolio h1 {
+  font-family: 'Muli';
+  font-size: 6rem;
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+@media only screen and (max-width: 992px) {
+  #portfolio h1 {
+    font-family: 'Muli';
+    font-size: 3rem;
+  }
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.portfolio .portfolio-item {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  margin-bottom: 15px;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.portfolio .portfolio-item .portfolio-item-caption {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background-color: rgba(253, 2, 206, 0.8);
 }
+
+/* .portfolio img {
+  width: 30rem;
+  height: 20rem;
+} */
+
+.portfolio hr {
+    height: 0.5px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: : #ffffff;
+}
+
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .portfolio {
+    margin-bottom: -30px;
+  }
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
 
 /* Work */
-
-
 .work-section {
   padding: 10rem 2rem;
   overflow-x: hidden;
@@ -336,22 +355,20 @@ footer {
   background-attachment: fixed;
   color: #ffffff;
   font-family: 'Muli';
-  background-image: url("images/light_black.jpg");
+  background-image: url("images/wallpaper/light_black.jpg");
 }
 
 .work-section h1{
   font-size: 6rem;
   text-align: center;
   font-family: 'Muli';
-
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .work-section h1{
     font-size: 3rem;
     text-align: center;
     font-family: 'Muli';
-
   }
 }
 
@@ -364,7 +381,6 @@ footer {
   background-color: transparent;
   width: 29rem;
   height: 25rem;
-  perspective: 70rem; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -378,7 +394,7 @@ footer {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover  .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -394,6 +410,7 @@ footer {
 .flip-card-front {
   background-color: rgba(6,5,39, .5);
   color: black;
+  padding: 10rem 2rem;
 }
 .flip-card-front img{
   width: 29rem;
