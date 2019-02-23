@@ -51,7 +51,7 @@ body {
 
 header {
   position: relative;
-  background-image: url("images/wallpaper/fiber_Moment.jpg");
+  background-image: url("images/Wallpaper/fiber_Moment.jpg");
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -355,7 +355,7 @@ footer {
   background-attachment: fixed;
   color: #ffffff;
   font-family: 'Muli';
-  background-image: url("images/wallpaper/light_black.jpg");
+  background-image: url("images/Wallpaper/light_black.jpg");
 }
 
 .work-section h1{
