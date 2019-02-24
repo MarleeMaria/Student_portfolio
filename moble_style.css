@@ -163,7 +163,10 @@ header .overlay {
 
 .quote-section {
   padding: 10rem 3rem;
+  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%,rgb(243, 232, 252) 90%);
+
 }
+
 .quote-section h1{
   font-family: 'Muli';
   font-size: 4rem;
@@ -178,8 +181,9 @@ header .overlay {
 
 
 .about-section {
-  padding: 10rem 3rem;
-  background: linear-gradient(0deg, rgb(6,5,39) 1%, rgb(243, 232, 252) 50%, rgb(6,5,39) 90%);
+  padding: 3rem 3rem;
+  /* background-color: rgb(243, 232, 252); */
+  background: linear-gradient(180deg, rgb(243, 232, 252) 1%, rgb(243, 232, 252) 80%, rgb(6,5,39) 90%);
 }
 .about-section h4{
   font-family: 'Muli';
@@ -263,7 +267,7 @@ header .overlay {
   padding: 13rem 3rem;
   color: black;
   text-align: center;
-  background: linear-gradient(180deg, rgb(6,5,39) 0%, rgb(243, 232, 252) 30%, rgb(243, 232, 252) 100%);
+  background: linear-gradient(180deg, rgb(6,5,39) 0%, rgb(243, 232, 252) 10%, rgb(243, 232, 252) 250%);
 }
 
 #school h1 {
@@ -370,6 +374,8 @@ header .overlay {
 /* Work */
 .work-section {
   padding: 10rem 2rem;
+  background: linear-gradient(0deg, rgb(6,5,39) 1%, rgb(6,5,39) 95%, rgb(243, 232, 252) 100%);
+
   /* overflow-x: hidden;
   text-align: center;
   background-size: cover;
@@ -380,7 +386,7 @@ header .overlay {
 }
 
 .work-section h1{
-  font-size: 6rem;
+  font-size: 3rem;
   text-align: center;
   font-family: 'Muli';
 }
@@ -391,7 +397,7 @@ header .overlay {
 
 @media only screen and (max-width: 992px) {
   .work-section h1{
-    font-size: 3rem;
+    font-size: 1rem;
     text-align: center;
     font-family: 'Muli';
   }
@@ -404,14 +410,29 @@ header .overlay {
 
 
 
+
+
 /* Extracurricular */
 #extra {
   /* padding: 13rem 3rem; */
-  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 70%, rgb(243, 232, 252) 90%);
+  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 90%, rgb(243, 232, 252) 100%);
 }
 .extras {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.extras h2{
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Muli';
+}
+@media only screen and (max-width: 992px) {
+  .extras h2{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Muli';
+  }
 }
 
 .extras .extra-item {
@@ -427,6 +448,6 @@ header .overlay {
 footer {
   background:rgba(243, 232, 252, 1);
   color: black;
-  padding: 1rem 3rem;
+  padding-bottom: 1rem;
 
 }
