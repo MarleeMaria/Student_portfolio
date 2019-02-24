@@ -48,6 +48,10 @@ body {
 
 
 
+.hideme
+{
+    opacity:0;
+}
 
 header {
   position: relative;
@@ -196,7 +200,7 @@ header .overlay {
     font-size: 2rem;
   }
   .about-section .about-text {
-    padding: 5rem;
+    padding: 3rem;
     font-size: 100%;
     background-color: rgb(6,5,39);
 
@@ -226,6 +230,10 @@ header .overlay {
     font-family: 'Muli';
     font-size: 3rem;
   }
+}
+
+#skill h6{
+  padding-top: 5%;
 }
 
 /* Skill Bars */
@@ -271,12 +279,7 @@ header .overlay {
 }
 
 
-footer {
-  background:rgba(243, 232, 252, 1);
-  color: black;
-  padding: 1rem 3rem;
 
-}
 
 /* Project */
 
@@ -285,10 +288,13 @@ footer {
 
 .portfolio {
   margin-bottom: -15px;
+  padding: 5rem 0rem;
+
+
 }
 #portfolio h1 {
   font-family: 'Muli';
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -312,10 +318,10 @@ footer {
   background-color: rgba(253, 2, 206, 0.8);
 }
 
-/* .portfolio img {
-  width: 30rem;
-  height: 20rem;
-} */
+.portfolio img {
+  width: 25rem;
+  height: 15rem;
+}
 
 .portfolio hr {
     height: 0.5px;
@@ -343,27 +349,44 @@ footer {
 }
 
 
+/* Resume */
 
-
-
-
-
-/* Work */
-.work-section {
-  padding: 10rem 2rem;
+.resume {
+  padding: 7rem 2rem;
   overflow-x: hidden;
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
   font-family: 'Muli';
-  background-image: url("images/Wallpaper/light_black.jpg");
+  background-image: url("images/Wallpaper/triangle-dark.jpg");
+}
+.resume button{
+  padding: 1rem 2rem;
+
+}
+
+
+/* Work */
+.work-section {
+  padding: 10rem 2rem;
+  /* overflow-x: hidden;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Muli';
+  background-image: url("images/Wallpaper/triangle.jpg"); */
 }
 
 .work-section h1{
   font-size: 6rem;
   text-align: center;
   font-family: 'Muli';
+}
+.work-section img{
+  width: 20rem;
+  height: 20rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -378,52 +401,32 @@ footer {
   text-align: left;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 29rem;
-  height: 25rem;
+
+
+
+/* Extracurricular */
+#extra {
+  /* padding: 13rem 3rem; */
+  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 70%, rgb(243, 232, 252) 90%);
+}
+.extras {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.extras .extra-item {
+  max-width: 18rem;
+  padding-bottom: 1rem;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover  .flip-card-inner {
-  transform: rotateY(180deg);
+.extras .extra-item img {
+  width:  10rem;
+  height: 10rem;
 }
 
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: rgba(6,5,39, .5);
+footer {
+  background:rgba(243, 232, 252, 1);
   color: black;
-  padding: 10rem 2rem;
-}
-.flip-card-front img{
-  width: 29rem;
-  height: 25rem;
-}
+  padding: 1rem 3rem;
 
-
-/* Style the back side */
-.flip-card-back {
-  background-color: rgb(243, 232, 252);
-  color: black;
-  padding: 0rem 1rem;
-  transform: rotateY(180deg);
 }
