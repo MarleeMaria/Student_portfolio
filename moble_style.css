@@ -17,6 +17,10 @@ body {
 
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 
 /* Nav Bar */
 
@@ -48,16 +52,9 @@ body {
 
 
 
-.hideme
-{
-    opacity:0;
-}
-
 header {
-  position: relative;
   background-image: url("images/Wallpaper/fiber_Moment.jpg");
   height: 75vh;
-  min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
@@ -222,7 +219,7 @@ header .overlay {
 
 .skills-section {
   padding: 13rem 3rem;
-  /* background: linear-gradient(0deg, rgb(6,5,39) 1%, rgba(6,5,39,0.2) 80%, rgba(6,5,39,0.5) 90%); */
+  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%, rgba(0,0,0) 90%);
 }
 #skill h3 {
   font-family: 'Muli';
@@ -343,7 +340,7 @@ header .overlay {
   font-size: 1.5rem;
 }
 
-@media (min-width: 576px) {
+@media only screen and (max-width: 992px) {
   .portfolio {
     margin-bottom: -30px;
   }
@@ -361,9 +358,18 @@ header .overlay {
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
-  color: #ffffff;
   font-family: 'Muli';
   background-image: url("images/Wallpaper/triangle-dark.jpg");
+}
+@media only screen and (max-width: 992px) {
+  .resume {
+    /* padding: 7rem 2rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Muli'; */
+    background: url("images/Wallpaper/triangle-dark.jpg") no-repeat;
+  }
+
 }
 .resume button{
   padding: 1rem 2rem;
@@ -374,7 +380,7 @@ header .overlay {
 /* Work */
 .work-section {
   padding: 10rem 2rem;
-  background: linear-gradient(0deg, rgb(6,5,39) 1%, rgb(6,5,39) 95%, rgb(243, 232, 252) 100%);
+  background: black;
 
   /* overflow-x: hidden;
   text-align: center;
@@ -397,7 +403,7 @@ header .overlay {
 
 @media only screen and (max-width: 992px) {
   .work-section h1{
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     font-family: 'Muli';
   }
@@ -429,7 +435,7 @@ header .overlay {
 }
 @media only screen and (max-width: 992px) {
   .extras h2{
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     font-family: 'Muli';
   }
