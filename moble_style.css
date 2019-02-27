@@ -424,7 +424,7 @@ header .overlay {
 /* Extracurricular */
 #extra {
   /* padding: 13rem 3rem; */
-  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 90%, rgb(243, 232, 252) 100%);
+  background: linear-gradient(0deg, rgb(6,5,39) 1%, rgb(6,5,39) 90%, rgb(243, 232, 252) 100%);
 }
 .extras {
   padding-top: 7rem;
