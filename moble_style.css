@@ -51,7 +51,7 @@ body {
 
 
 header {
-  background:url("images/Wallpaper/fiber_Moment.jpg") center no-repeat;;
+  background:url("images/Wallpaper/fiber_Moment.jpg") center no-repeat;
   background-size: cover;
   height: 75vh;
   width: 100%;
@@ -95,6 +95,19 @@ header .overlay {
   z-index: 1;
 }
 
+
+
+
+@media only screen and (max-width: 992px) {
+  header {
+    background:url("images/Wallpaper/fiber_Moment.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+}
+
+
+
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('https://www.videvo.net/video/fiber-optics-macro-shot-12/5510/') black no-repeat center center scroll;
@@ -123,7 +136,7 @@ header .overlay {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)); */
   -webkit-background-clip: text;
 }
 
@@ -153,8 +166,8 @@ header .overlay {
 
 
 .quote-section {
-  padding: 10rem 3rem;
-  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%,rgb(243, 232, 252) 90%);
+  padding: 8rem 3rem;
+  /* background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%,rgb(243, 232, 252) 90%); */
 
 }
 
@@ -172,9 +185,12 @@ header .overlay {
 
 
 .about-section {
-  padding: 3rem 3rem;
+  /* padding: 3rem 0rem; */
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   /* background-color: rgb(243, 232, 252); */
-  background: linear-gradient(180deg, rgb(243, 232, 252) 1%, rgb(243, 232, 252) 80%, rgb(6,5,39) 90%);
+  /* background: linear-gradient(180deg, rgb(243, 232, 252) 1%, rgb(243, 232, 252) 80%, rgb(6,5,39) 90%); */
+  background: rgb(243, 232, 252)
 }
 .about-section h4{
   font-family: 'Muli';
@@ -212,8 +228,9 @@ header .overlay {
 /* Skills */
 
 .skills-section {
-  padding: 13rem 3rem;
-  background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%, rgba(0,0,0) 90%);
+  padding: 10rem 3rem;
+  /* background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%, rgba(0,0,0) 90%); */
+  background:rgb(3,14,23);
 }
 #skill h3 {
   font-family: 'Muli';
@@ -255,10 +272,14 @@ header .overlay {
 /* Education */
 
 .school-section {
-  padding: 13rem 3rem;
-  color: black;
+  color: white;
+  padding: 7rem 2rem;
+  overflow-x: hidden;
   text-align: center;
-  background: linear-gradient(180deg, rgb(6,5,39) 0%, rgb(243, 232, 252) 10%, rgb(243, 232, 252) 250%);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Muli';
+  background-image: url("images/Wallpaper/light_black.jpg");
 }
 
 #school h1 {
@@ -270,6 +291,11 @@ header .overlay {
   #school h1 {
     font-family: 'Muli';
     font-size: 3rem;
+  }
+  .school-section {
+    background-attachment: scroll;
+    background-image: url("images/Wallpaper/light_black.jpg") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -284,6 +310,8 @@ header .overlay {
 .portfolio {
   margin-bottom: -15px;
   padding: 5rem 0rem;
+  /* background-color: rgb(239,255,255);
+  color: rgb(3,14,23); */
 
 
 }
@@ -308,9 +336,12 @@ header .overlay {
 
 .portfolio .portfolio-item .portfolio-item-caption {
   -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background-color: rgba(253, 2, 206, 0.8);
+  /* transition: all ease 0.5s; */
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background-color: rgba(253, 2, 206, 0.8); */
 }
 
 .portfolio img {
@@ -328,6 +359,8 @@ header .overlay {
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
@@ -357,16 +390,12 @@ header .overlay {
 }
 @media only screen and (max-width: 992px) {
   .resume {
-    /* padding: 7rem 2rem;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Muli'; */
 
-    background: url("images/Wallpaper/triangle-dark.jpg") center no-repeat;;
+    background: url("images/Wallpaper/triangle-dark.jpg") center no-repeat;
     background-size: cover;
   }
-
 }
+
 .resume button{
   padding: 1rem 2rem;
 
@@ -375,17 +404,11 @@ header .overlay {
 
 /* Work */
 .work-section {
-  padding: 10rem 2rem;
-  background: black;
-
-  /* overflow-x: hidden;
-  text-align: center;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
-  font-family: 'Muli';
-  background-image: url("images/Wallpaper/triangle.jpg"); */
+  padding: 7rem 0rem;
+  /* background-color: rgb(40, 2, 102); */
+  /* color:black; */
 }
+
 
 .work-section hr {
     height: 0.5px;
@@ -394,18 +417,15 @@ header .overlay {
     border-color: : #ffffff;
 }
 
-.work-section h1{
+.work-section h2{
   font-size: 3rem;
   text-align: center;
   font-family: 'Muli';
 }
-.work-section img{
-  width: 20rem;
-  height: 20rem;
-}
+
 
 @media only screen and (max-width: 992px) {
-  .work-section h1{
+  .work-section h2{
     font-size: 2rem;
     text-align: center;
     font-family: 'Muli';
@@ -424,7 +444,7 @@ header .overlay {
 /* Extracurricular */
 #extra {
   /* padding: 13rem 3rem; */
-  background: linear-gradient(0deg, rgb(6,5,39) 1%, rgb(6,5,39) 90%, rgb(243, 232, 252) 100%);
+  /* background: linear-gradient(0deg, rgb(6,5,39) 1%, rgb(6,5,39) 90%, rgb(243, 232, 252) 100%); */
 }
 .extras {
   padding-top: 7rem;
