@@ -51,8 +51,6 @@ body {
 
 
 header {
-  background:url("images/Wallpaper/fiber_Moment.jpg") center no-repeat;
-  background-size: cover;
   height: 75vh;
   width: 100%;
   overflow: hidden;
@@ -84,27 +82,21 @@ header .container {
   z-index: 2;
 }
 
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
+.overlay {
+  background:url("images/Wallpaper/fiber_Moment.jpg") center no-repeat;
+  background-size: cover;
 }
 
 
 
 
-@media only screen and (max-width: 992px) {
-  header {
+/* @media only screen and (max-width: 992px) {
+  header .overlay {
     background:url("images/Wallpaper/fiber_Moment.jpg") center no-repeat;
     background-size: cover;
   }
 
-}
+} */
 
 
 
@@ -293,8 +285,8 @@ header .overlay {
     font-size: 3rem;
   }
   .school-section {
-    background-attachment: scroll;
-    background-image: url("images/Wallpaper/light_black.jpg") center no-repeat;
+    /* background-attachment: scroll; */
+    background: url("images/Wallpaper/light_black.jpg") center no-repeat;
     background-size: cover;
   }
 }
