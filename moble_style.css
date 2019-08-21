@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Muli';
+
+}
+
 body {
   background-color: rgb(6,5,39);
   color: #ffffff;
@@ -18,6 +23,52 @@ body {
 .clickable {
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Nav Bar */
@@ -124,7 +175,6 @@ header .container {
 }
 
 .masthead h1 {
-  font-family: 'Muli';
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -158,18 +208,17 @@ header .container {
 
 
 .quote-section {
-  padding: 8rem 3rem;
+  padding: 6rem 3rem;
+  background-image: linear-gradient(-135deg, rgb(6,5,39), rgb(63, 34, 87));
   /* background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%,rgb(243, 232, 252) 90%); */
 
 }
 
 .quote-section h1{
-  font-family: 'Muli';
   font-size: 4rem;
   text-align: center;
 }
 .quote-section h2{
-  font-family: 'Muli';
   font-size: 2rem;
   text-align: center;
 }
@@ -182,10 +231,9 @@ header .container {
   padding-bottom: 7rem;
   /* background-color: rgb(243, 232, 252); */
   /* background: linear-gradient(180deg, rgb(243, 232, 252) 1%, rgb(243, 232, 252) 80%, rgb(6,5,39) 90%); */
-  background: rgb(243, 232, 252)
+  background: rgb(145, 32, 156);
 }
 .about-section h4{
-  font-family: 'Muli';
   font-size: 5rem;
 }
 
@@ -199,7 +247,6 @@ header .container {
 
 @media only screen and (max-width: 992px) {
   .about-section h4{
-    font-family: 'Muli';
     font-size: 2rem;
   }
   .about-section .about-text {
@@ -223,15 +270,15 @@ header .container {
   padding: 10rem 3rem;
   /* background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%, rgba(0,0,0) 90%); */
   background:rgb(3,14,23);
+  background-image: linear-gradient(175deg, rgb(40, 11, 88), rgb(6,5,39));
+
 }
 #skill h3 {
-  font-family: 'Muli';
   font-size: 9rem;
 }
 
 @media only screen and (max-width: 992px) {
   #skill h3{
-    font-family: 'Muli';
     font-size: 3rem;
   }
 }
@@ -275,13 +322,11 @@ header .container {
 }
 
 #school h1 {
-  font-family: 'Muli';
   font-size: 9rem;
 }
 
 @media only screen and (max-width: 992px) {
   #school h1 {
-    font-family: 'Muli';
     font-size: 3rem;
   }
   .school-section {
@@ -302,19 +347,19 @@ header .container {
 .portfolio {
   margin-bottom: -15px;
   padding: 5rem 0rem;
+  background-image: linear-gradient(-35deg, rgb(145, 32, 156), rgb(6,5,39));
+
   /* background-color: rgb(239,255,255);
   color: rgb(3,14,23); */
 
 
 }
 #portfolio h1 {
-  font-family: 'Muli';
   font-size: 4rem;
 }
 
 @media only screen and (max-width: 992px) {
   #portfolio h1 {
-    font-family: 'Muli';
     font-size: 3rem;
   }
 }
@@ -377,7 +422,6 @@ header .container {
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Muli';
   background-image: url("images/Wallpaper/triangle-dark.jpg");
 }
 @media only screen and (max-width: 992px) {
@@ -397,8 +441,8 @@ header .container {
 /* Work */
 .work-section {
   padding: 7rem 0rem;
-  /* background-color: rgb(40, 2, 102); */
-  /* color:black; */
+  background-image: linear-gradient(-135deg, rgb(145, 32, 156), rgb(6,5,39));
+/* background-image: linear-gradient(-135deg, rgb(237, 29, 122), rgb(111, 0, 100)); */
 }
 
 
@@ -410,17 +454,19 @@ header .container {
 }
 
 .work-section h2{
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
-  font-family: 'Muli';
+  margin-bottom: -15px;
+
 }
 
 
 @media only screen and (max-width: 992px) {
   .work-section h2{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
-    font-family: 'Muli';
+    margin-bottom: -15px;
+
   }
 }
 
@@ -429,6 +475,54 @@ header .container {
 }
 
 
+.flip-card {
+  background-color: transparent;
+  width: 25rem;
+  height: 25rem;
+  max-width: 100%;
+
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+
+  text-align: center;
+  transition: transform 0.8s;
+  margin:1em;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(#bbbbbb, 0);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(6,5,39);
+  color: white;
+  padding: 1em;
+  transform: rotateY(180deg);
+}
 
 
 
@@ -446,13 +540,11 @@ header .container {
 .extras h2{
   font-size: 3rem;
   text-align: center;
-  font-family: 'Muli';
 }
 @media only screen and (max-width: 992px) {
   .extras h2{
     font-size: 2rem;
     text-align: center;
-    font-family: 'Muli';
   }
 }
 
