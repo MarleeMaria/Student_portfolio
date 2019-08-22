@@ -491,7 +491,7 @@ header .container {
   height: 25rem;
   max-width: 100%;
 
-  /* perspective: 1000px; /* Remove this if you don't want the 3D effect */ */
+  /* perspective: 1000px;  Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -508,8 +508,13 @@ header .container {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover, .flip-card:active .flip-card-inner {
-  transform: rotateY(180deg);
+.flip-card:hover .flip-card-inner {
+  /* transform: rotateY(180deg); */
+  transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
 }
 
 /* Position the front and back side */
@@ -531,7 +536,12 @@ header .container {
   background-color: rgb(6,5,39);
   color: white;
   padding: 1em;
-  transform: rotateY(180deg);
+  /* transform: rotateY(180deg); */
+  transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotateY(180deg) scale(1) skew(1deg) translate(0px);
 }
 
 
