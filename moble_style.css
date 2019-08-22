@@ -491,7 +491,7 @@ header .container {
   height: 25rem;
   max-width: 100%;
 
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  /* perspective: 1000px; /* Remove this if you don't want the 3D effect */ */
 }
 
 /* This container is needed to position the front and back side */
@@ -508,7 +508,7 @@ header .container {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover, .flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
