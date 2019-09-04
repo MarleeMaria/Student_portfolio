@@ -28,7 +28,6 @@ body {
 
 
 /* Nav Bar */
-
 #mainNav .navbar-brand:hover {
   color: #c902a8;
 }
@@ -125,8 +124,6 @@ header .container {
   font-size: 3.5rem;
   line-height: 3.5rem;
   letter-spacing: 0.8rem;
-  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)); */
-  /* -webkit-background-clip: text; */
 }
 
 .masthead h2 {
@@ -224,7 +221,7 @@ header .container {
 /* Skills */
 
 .skills-section {
-  padding: 10rem 3rem;
+  padding: 10rem 1rem;
   /* background: linear-gradient(180deg, rgb(6,5,39) 1%, rgb(6,5,39) 80%, rgba(0,0,0) 90%); */
   background:rgb(3,14,23);
   background-image: linear-gradient(175deg, rgb(40, 11, 88), rgb(6,5,39));
@@ -271,7 +268,6 @@ header .container {
   color: white;
   padding: 7rem 2rem;
   overflow-x: hidden;
-  text-align: center;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Muli';
@@ -279,7 +275,7 @@ header .container {
 }
 
 #school h1 {
-  font-size: 9rem;
+  font-size: 5rem;
 }
 
 @media only screen and (max-width: 912px) {
