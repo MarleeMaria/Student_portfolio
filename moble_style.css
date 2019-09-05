@@ -120,7 +120,6 @@ header .container {
         line-height: 6.5rem;
         letter-spacing: 0.8rem;
     }
-
 }
 
 .quote-section {
@@ -317,7 +316,6 @@ header .container {
     font-size: 1.5rem;
 }
 
-
 .modal-content {
     background-color: rgb(47, 35, 66);
 }
@@ -329,7 +327,6 @@ header .container {
 .modal-footer {
     background-color: rgb(25, 15, 40);
 }
-
 
 /* Resume */
 .resume {
